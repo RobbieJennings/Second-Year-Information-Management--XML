@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE Car_Info [
+  <!ELEMENT Car_Info (Car)>
+	<!ELEMENT Car (Owner, Owner_Age, Owner_Sex, Make, Model, Year, Reg, NumberOfSeats, NumberOfDoors, EngineSize, Hybrid)>	<!-- Document describing the Car class -->
+	<!ELEMENT Owner (#PCDATA)>																								<!-- states the name of the Owner -->
+	<!ELEMENT Owner_Age (#PCDATA)>																							<!-- states the Owner's Age -->
+	<!ELEMENT Owner_Sex (#PCDATA)>																							<!-- states the gender of the Owner -->
+	<!ELEMENT Make (#PCDATA)>																								<!-- states Make of the car -->
+	<!ELEMENT Model (#PCDATA)>																								<!-- states the Model of the car-->
+	<!ELEMENT Year (#PCDATA)>																								<!-- states the Year the car was registered -->
+	<!ELEMENT Reg (#PCDATA)>																								<!-- states the registration number  -->
+	<!ELEMENT NumberOfSeats (#PCDATA)>																						<!-- states the number of seats in the car  -->
+	<!ELEMENT NumberOfDoors (#PCDATA)>																						<!-- states the number of doors on the car  -->
+	<!ELEMENT EngineSize (#PCDATA)>																							<!-- states the size of the car's engine  -->
+	<!ELEMENT Hybrid (#PCDATA)>																								<!-- states whether the car is a hybrid or not  -->
+
+	<!ATTLIST Age dateOfBirth CDATA #IMPLIED>																				<!-- is an optional attribute to show the date of birth of the Owner -->
+	
+]>
+
+<Car_Info>
+<Car>
+	<Owner>	
+		Alex Fields
+	</Owner>	
+	<Owner_Age dateOfBirth = "10/08/1997">	
+		20
+	</Owner_Age>	
+	<Owner_Sex>
+		Male
+	</Owner_Sex>
+	<Make>
+		McClaren
+	</Make>																								
+	<Model>
+		mp4-12c
+	</Model>
+	<Year>	
+		2012
+	</Year>
+	<Reg>	
+		2Fast 2Furious
+	</Reg>
+	<NumberOfSeats>
+		2
+	</NumberOfSeats>	
+	<NumberOfDoors>	
+		2
+	</NumberOfDoors>	
+	<EngineSize>
+		3.8 Litre
+	</EngineSize>	
+	<Hybrid>
+		True
+	</Hybrid>
+</Car>
+
+<Car>
+	<Owner>	
+		Robbie Jennings
+	</Owner>	
+	<Owner_Age dateOfBirth = "20/04/1997">	
+		20
+	</Owner_Age>	
+	<Owner_Sex>
+		Male
+	</Owner_Sex>
+	<Make>
+		Rolls Royce
+	</Make>																								
+	<Model>
+		Phantom
+	</Model>
+	<Year>	
+		2012
+	</Year>
+	<Reg>	
+		RobbieDrivesGood
+	</Reg>
+	<NumberOfSeats>
+		4
+	</NumberOfSeats>	
+	<NumberOfDoors>	
+		4
+	</NumberOfDoors>	
+	<EngineSize>
+		3.8 Litre
+	</EngineSize>	
+	<Hybrid>
+		True
+	</Hybrid>
+</Car>
+
+<Car>
+	<Owner>	
+		Elon Musk
+	</Owner>	
+	<Owner_Age dateOfBirth = "28/06/1971">	
+		46
+	</Owner_Age>	
+	<Owner_Sex>
+		Male
+	</Owner_Sex>
+	<Make>
+		Porsche
+	</Make>																								
+	<Model>
+		911
+	</Model>
+	<Year>	
+		2007
+	</Year>
+	<Reg>	
+		501 AGA
+	</Reg>
+	<NumberOfSeats>
+		2
+	</NumberOfSeats>	
+	<NumberOfDoors>	
+		2
+	</NumberOfDoors>	
+	<EngineSize>
+		3.6 Litre
+	</EngineSize>	
+	<Hybrid>
+		False
+	</Hybrid>
+</Car>
+
+<Car>
+	<Owner>	
+		Elon Musk
+	</Owner>	
+	<Owner_Age dateOfBirth = "28/06/1971">	
+		46
+	</Owner_Age>	
+	<Owner_Sex>
+		Male
+	</Owner_Sex>
+	<Make>
+		Fiat
+	</Make>																								
+	<Model>
+		Punto
+	</Model>
+	<Year>	
+		1999
+	</Year>
+	<Reg>	
+		99-D-1234
+	</Reg>
+	<NumberOfSeats>
+		5
+	</NumberOfSeats>	
+	<NumberOfDoors>	
+		2
+	</NumberOfDoors>	
+	<EngineSize>
+		1.2 Litre
+	</EngineSize>	
+	<Hybrid>
+		False
+	</Hybrid>
+</Car>
+
+<Car>
+	<Owner>	
+		Elon Musk
+	</Owner>	
+	<Owner_Age dateOfBirth = "28/06/1971">	
+		46
+	</Owner_Age>	
+	<Owner_Sex>
+		Male
+	</Owner_Sex>
+	<Make>
+		Ferarri
+	</Make>																								
+	<Model>
+		Laferarri Aperta
+	</Model>
+	<Year>	
+		2017
+	</Year>
+	<Reg>	
+		GO FAST
+	</Reg>
+	<NumberOfSeats>
+		2
+	</NumberOfSeats>	
+	<NumberOfDoors>	
+		2
+	</NumberOfDoors>	
+	<EngineSize>
+		6 Litre
+	</EngineSize>	
+	<Hybrid>
+		True
+	</Hybrid>
+</Car>
+</Car_Info>

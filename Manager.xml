@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE Manager [
+	<!ELEMENT Manager (Employee.Age, Employee.Employee_Num, Employee.Name, Employee.Years_Of_Service, Employee.Telephone_No, Team)> <!-- Document describing the Manager class -->
+	<!ELEMENT Employee.Age (#PCDATA)>																								  <!-- which inherits some Employee Values, ie.Name, Age, etc -->
+	<!ELEMENT Employee.Employee_Num (#PCDATA)>
+	<!ELEMENT Employee.Name (#PCDATA)>
+	<!ELEMENT Employee.Years_Of_Service (#PCDATA)>
+	<!ELEMENT Employee.Telephone_No (#PCDATA)>
+	<!ELEMENT Team (Employee+)>								<!-- states the team of employees that the Manager will oversee -->
+	<!ELEMENT Employee (#PCDATA)>							<!-- Refers to the Employee(s) the Manager will oversee  -->
+
+
+	
+	<!ATTLIST Manager xmi.id CDATA #REQUIRED>				<!-- is required to illustrate association between Manager and Employee -->
+	<!ATTLIST Manager gender CDATA #IMPLIED>				<!-- is an optional attribute to show the gender of the Manager -->
+	<!ATTLIST Employee.Age dateOfBirth CDATA #IMPLIED>		<!-- is an optional attribute to show the date of birth of the Manager -->
+	<!ATTLIST Employee.Name placeOfBirth CDATA #IMPLIED>	<!-- is an optional attribute to show the place of birth of the Manager -->
+	<!ATTLIST Employee xmi.idref CDATA #REQUIRED>			<!-- is required to illustrate association between Manager and Employee -->
+]>
+
+<Manager xmi.id="m1" gender="Male">
+  <Employee.Age dateOfBirth="04/12/1977">
+  	40
+  </Employee.Age>
+  <Employee.Employee_Num>
+  	1234
+  </Employee.Employee_Num>
+  <Employee.Name placeOfBirth ="Ireland">
+  	Jonh Doe
+  </Employee.Name>
+  <Employee.Years_Of_Service>
+  	20
+  </Employee.Years_Of_Service>
+  <Employee.Telephone_No>
+  	0879341256
+  </Employee.Telephone_No>
+  <Team>
+  	<Employee xmi.idref="e1"/>
+  </Team>
+</Manager>

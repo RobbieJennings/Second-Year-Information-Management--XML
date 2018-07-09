@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE Claimee [
+	<!ELEMENT Claimee (Name, Claimee_Age, Gender, Address, PhoneNumber, CarRegNumber)>	<!-- Document describing the Claimee class -->
+	<!ELEMENT Name (#PCDATA)>																			<!-- states the name of the Owner -->
+	<!ELEMENT Claimee_Age (#PCDATA)>																	<!-- states the Owner's Age -->
+	<!ELEMENT Gender (#PCDATA)>																			<!-- states the gender of the Owner -->
+	<!ELEMENT Address (#PCDATA)>																		<!-- states Make of the car -->
+	<!ELEMENT PhoneNumber (#PCDATA)>																	<!-- states the Model of the car-->
+	<!ELEMENT CarRegNumber (#PCDATA)>																	<!-- states the Year the car was registered -->
+
+	<!ATTLIST Age dateOfBirth CDATA #IMPLIED>	
+														<!-- is an optional attribute to show the date of birth of the Owner -->
+	
+  ]>
+  
+
+<Claimee>
+<Name>
+Annie Kans
+</Name>
+<Claimee_Age dateOfBirth = "10/08/1997">
+20
+</Claimee_Age>
+<Gender>
+Female
+</Gender>
+<Address>
+123 Ireland Road,
+           Dublin,
+           Co. Meath
+</Address>
+<PhoneNumber>
+0851687082
+</PhoneNumber>
+<CarRegNumber>
+05-MH-3462
+</CarRegNumber>
+</Claimee>
+
+
+

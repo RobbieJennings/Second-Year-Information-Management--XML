@@ -1,0 +1,46 @@
+<?xml version="1.0" ?>
+
+<!DOCTYPE Payments[
+<!ELEMENT Payments (Payment*)>
+<!ELEMENT Payment (date, amount, method, recipient, sender, recipient_address, send_address)>
+<!ELEMENT date   (#PCDATA)>
+<!ELEMENT amount   (#PCDATA)>
+<!ELEMENT method   (#PCDATA)>
+<!ELEMENT recipient (#PCDATA)>
+<!ELEMENT sender (#PCDATA)>
+<!ELEMENT recipient_address (#PCDATA)>
+<!ELEMENT send_address   (#PCDATA)>
+<!ATTLIST Payment account_info CDATA #REQUIRED>
+<!ATTLIST Payment reference CDATA #REQUIRED>
+<!ATTLIST Payment invoice_reference CDATA #REQUIRED>
+]>
+
+<Payments>
+    <Payment account_info = "X" reference = "ANNUAL PAYMENT" invoice_reference = "ANNUAL INVOICE">
+		<date>"05/12/2017"</date>
+		<amount>100</amount>
+		<method>"Cheque"</method>
+		<recipient>"AA Insurance"</recipient>
+		<sender>"John Franklin"</sender>
+		<recipient_address>"1 AA Insurance Office, Dublin"</recipient_address>
+		<send_address>"123 Seaview Lake, Dublin"</send_address>
+	</Payment>
+    <Payment account_info = "Y" reference = "MONTHLY PAYMENT" invoice_reference = "MONTHLY INVOICE">
+		<date>"04/12/2017"</date>
+		<amount>20</amount>
+		<method>"Electronic Transfer"</method>
+		<recipient>"AA Insurance"</recipient>
+		<sender>"Bill Williams"</sender>
+		<recipient_address>"1 AA Insurance Office, Dublin"</recipient_address>
+		<send_address>"21 Big Hill Avenue, Dublin"</send_address>
+	</Payment>
+	<Payment account_info = "Z" reference = "WEEKLY PAYMENT" invoice_reference = "WEEKLY INVOICE">
+		<date>"04/12/2017"</date>
+		<amount>5</amount>
+		<method>"Cash"</method>
+		<recipient>"AA Insurance"</recipient>
+		<sender>"Sarah Southgate"</sender>
+		<recipient_address>"1 AA Insurance Office, Dublin"</recipient_address>
+		<send_address>"3 Sunny Vale Park, Cork"</send_address>
+	</Payment>
+</Payments>

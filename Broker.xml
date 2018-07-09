@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!DOCTYPE Broker[
+	<!ELEMENT Broker (Broker.AvailablePolicyOptions, Broker.Age, Broker.Employee_Num, Broker.Name, Broker.Years_Of_Service, Broker.Telephone_No, Broker.reportsTo)>
+	<!ELEMENT Broker.AvailablePolicyOptions   (#PCDATA)> <!-- Need to know what they can sell -->
+	<!ELEMENT Broker.Age (#PCDATA)>						<!-- How old are they, So we know when they are retiring -->
+	<!ELEMENT Broker.Employee_Num (#PCDATA)>				<!-- Needed for identification-->
+	<!ELEMENT Broker.Name (#PCDATA)>						<!-- Need a name to the number to know who we are dealing with, We're humans not robots-->
+	<!ELEMENT Broker.Years_Of_Service (#PCDATA)>			<!-- Nice to congratulate employees for service -->
+	<!ELEMENT Broker.Telephone_No (#PCDATA)>				<!-- Needed for contact purposes within company-->
+	<!ELEMENT Broker.reportsTo (#PCDATA)>					<!-- Need to know where their work is passed to -->
+		
+	<!ATTLIST Broker.Age dateOfBirth CDATA #IMPLIED>				
+	<!ATTLIST Broker.Name placeOfBirth CDATA #IMPLIED>		
+]>
+
+<Broker>
+	<Broker.AvailablePolicyOptions> "Single Car Insurance, Multi Car Insurance, Multi Driver insurance" </Broker.AvailablePolicyOptions>
+	<Broker.Age dateOfBirth="05/06/1977">
+  	42
+	</Broker.Age>
+  <Broker.Employee_Num>
+  	6159
+  </Broker.Employee_Num>
+  <Broker.Name placeOfBirth ="Ireland">
+  	Jim White
+  </Broker.Name>
+  <Broker.Years_Of_Service>
+  	8
+  </Broker.Years_Of_Service>
+  <Broker.Telephone_No>
+  	0838019275
+  </Broker.Telephone_No>
+  <Broker.reportsTo>
+  	"James Manfield"
+  </Broker.reportsTo>
+</Broker>
+
+

@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+
+<!DOCTYPE Invoices[
+<!ELEMENT Invoices (Invoice*)>
+<!ELEMENT Invoice (date, amount, recipient, sender, recipient_address, send_address)>
+<!ELEMENT date   (#PCDATA)>
+<!ELEMENT amount   (#PCDATA)>
+<!ELEMENT recipient (#PCDATA)>
+<!ELEMENT sender (#PCDATA)>
+<!ELEMENT recipient_address (#PCDATA)>
+<!ELEMENT send_address   (#PCDATA)>
+<!ATTLIST Invoice account_info CDATA #REQUIRED>
+<!ATTLIST Invoice reference  CDATA #REQUIRED>
+]>
+
+<Invoices>
+    <Invoice account_info = "X" reference = "ANNUAL INVOICE">
+		<date>"05/12/2017"</date>
+		<amount>50</amount>
+		<recipient>"John Franklin"</recipient>
+		<sender>"Frank the Broker"</sender>
+		<recipient_address>"123 Seaview Lake, Dublin"</recipient_address>
+		<send_address>"11 AA Insurance Office, Dublin"</send_address>
+	</Invoice>
+    <Invoice account_info = "Y" reference = "MONTHLY INVOICE">
+		<date>"04/12/2017"</date>
+		<amount>20</amount>
+		<recipient>"Bill Williams"</recipient>
+		<sender>"Frank the Broker"</sender>
+		<recipient_address>"21 Big Hill Avenue, Dublin"</recipient_address>
+		<send_address>"11 AA Insurance Office, Dublin"</send_address>
+	</Invoice>
+	<Invoice account_info = "Z" reference = "WEEKLY INVOICE">
+		<date>"04/12/2017"</date>
+		<amount>5</amount>
+		<recipient>"Sarah Southgate"</recipient>
+		<sender>"Jill the Broker"</sender>
+		<recipient_address>"3 Sunny Vale Park, Cork"</recipient_address>
+		<send_address>"9 AA Insurance Office, Dublin"</send_address>
+	</Invoice>
+</Invoices>

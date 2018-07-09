@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!DOCTYPE NamedDrivers[
+<!ELEMENT NamedDrivers (NamedDriver*)>
+<!ELEMENT NamedDriver (NamedDriver.Car,NamedDriver.Gender,NamedDriver.DOB,NamedDriver.Policy, NamedDriver.Payed, NamedDriver.Insured )>
+<!ELEMENT NamedDriver.Car  (#PCDATA)>
+<!ELEMENT NamedDriver.Gender  (#PCDATA)>
+<!ELEMENT NamedDriver.DOB  (#PCDATA)>
+<!ELEMENT NamedDriver.Policy   (#PCDATA)>
+<!ELEMENT NamedDriver.Payed (#PCDATA)>
+<!ELEMENT NamedDriver.Insured (#PCDATA)>
+<!ATTLIST NamedDriver Name CDATA #REQUIRED> <!-- Name  is a required attribute to NamedDriver-->
+<!ATTLIST NamedDriver.Car Make CDATA #IMPLIED> <!-- Make is an optional attribute to NamedDriver.Payed-->
+
+]>
+<NamedDrivers>
+	<NamedDriver Name = "Conor O Donnell">
+		<NamedDriver.Car Make = "Toyota"> Sligo23 </NamedDriver.Car>
+		<NamedDriver.Gender> male </NamedDriver.Gender>
+		<NamedDriver.DOB> 15/06/1998 </NamedDriver.DOB>
+		<NamedDriver.Policy> 28876 </NamedDriver.Policy>
+		<NamedDriver.Payed> true </NamedDriver.Payed>
+		<NamedDriver.Insured> true </NamedDriver.Insured>
+	</NamedDriver>
+	
+	<NamedDriver Name = "Jackline Collins">
+		<NamedDriver.Car> Dublin4 </NamedDriver.Car>
+		<NamedDriver.Gender> female </NamedDriver.Gender>
+		<NamedDriver.DOB> 15/06/1998 </NamedDriver.DOB>
+		<NamedDriver.Policy> 24677 </NamedDriver.Policy>
+		<NamedDriver.Payed> false </NamedDriver.Payed>
+		<NamedDriver.Insured> false </NamedDriver.Insured>
+	</NamedDriver>
+
+	<NamedDriver Name = "Ronan Carr">
+		<NamedDriver.Car Make = "Audi"> Sligo23 </NamedDriver.Car>
+		<NamedDriver.Gender> male </NamedDriver.Gender>
+		<NamedDriver.DOB> 17/01/1977 </NamedDriver.DOB>
+		<NamedDriver.Policy> 223764 </NamedDriver.Policy>
+		<NamedDriver.Payed> true </NamedDriver.Payed>
+		<NamedDriver.Insured> true </NamedDriver.Insured>
+	</NamedDriver>
+</NamedDrivers>

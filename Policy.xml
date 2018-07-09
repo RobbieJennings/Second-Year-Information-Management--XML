@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!DOCTYPE Policies[
+<!ELEMENT Policies (Policy*)>
+<!ELEMENT Policy (Policy.ExpirationDate,Policy.CommencementDate,Policy.Premium,Policy.Description, Policy.Driver )>
+<!ELEMENT Policy.ExpirationDate   (#PCDATA)>
+<!ELEMENT Policy.CommencementDate   (#PCDATA)>
+<!ELEMENT Policy.Premium (#PCDATA)>
+<!ELEMENT Policy.Description (#PCDATA)>
+<!ELEMENT Policy.Driver (#PCDATA)>
+<!ATTLIST Policy PolicyID CDATA #REQUIRED> <!-- PolicyID  is a required attribute to Policy-->
+<!ATTLIST Policy.Premium Currency CDATA #IMPLIED> <!-- Currency is an optional attribute to Policy.Premium-->
+
+]>
+<Policies>
+	<Policy PolicyID = "37749D">
+		<Policy.ExpirationDate> 07/12/2018 </Policy.ExpirationDate>
+		<Policy.CommencementDate> 08/12/2017 </Policy.CommencementDate>
+		<Policy.Premium Currency = "EUR"> 327.70 </Policy.Premium>
+		<Policy.Description> Comprehensive Coverage </Policy.Description>
+		<Policy.Driver> "Jackline Collins" </Policy.Driver>
+	</Policy>
+	
+	<Policy PolicyID = "99849F">
+		<Policy.ExpirationDate> 31/12/2018 </Policy.ExpirationDate>
+		<Policy.CommencementDate> 01/01/2018 </Policy.CommencementDate>
+		<Policy.Premium Currency = "GBP"> 200.00 </Policy.Premium>
+		<Policy.Description> Personal Injury Coverage </Policy.Description>
+		<Policy.Driver> "Susan Boyle" </Policy.Driver>
+	</Policy>
+	
+	<Policy PolicyID = "25849F">
+		<Policy.ExpirationDate> 31/12/2018 </Policy.ExpirationDate>
+		<Policy.CommencementDate> 01/01/2018 </Policy.CommencementDate>
+		<Policy.Premium Currency = "EUR"> 259.00 </Policy.Premium>
+		<Policy.Description> Third Party, Fire and Theft </Policy.Description>
+		<Policy.Driver> "Annie Cans" </Policy.Driver>
+	</Policy>
+</Policies>

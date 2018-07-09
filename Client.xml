@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!DOCTYPE Clients[
+	<!ELEMENT Clients (Client*)>
+	<!ELEMENT Client (Client.Name,Client.Gender,Client.Address,Client.Age,Client.MemberSince,Client.NoOfPreviousClaims)>
+	<!ELEMENT Client.Name   (#PCDATA)>
+	<!ELEMENT Client.Gender (#PCDATA)>
+	<!ELEMENT Client.Address (#PCDATA)>
+	<!ELEMENT Client.Age (#PCDATA)>
+	<!ELEMENT Client.MemberSince (#PCDATA)>
+	<!ELEMENT Client.NoOfPreviousClaims (#PCDATA)>
+	
+	<!ATTLIST Client ClientID CDATA #REQUIRED> <!-- ClientID  is a required attribute to Policy-->
+	
+
+]>
+<Clients>
+	<Client ClientID = "14674532">
+		<Client.Name> 
+			"John Smith" 
+		</Client.Name>
+		<Client.Gender> 
+			"Male" 
+		</Client.Gender>
+		<Client.Address> 
+			"Roundwood"
+		</Client.Address>
+		<Client.Age> 
+			49 
+		</Client.Age>
+		<Client.MemberSince> 
+			22/04/1998 
+		</Client.MemberSince>
+		<Client.NoOfPreviousClaims>
+			1
+		</Client.NoOfPreviousClaims>
+	</Client>
+
+	<Client ClientID = "12644822">
+		<Client.Name> 
+			"Mary Smith" 
+		</Client.Name>
+		<Client.Gender> 
+			"Female" 
+		</Client.Gender>
+		<Client.Address> 
+			"Roundwood"
+		</Client.Address>
+		<Client.Age> 
+			48 
+		</Client.Age>
+		<Client.MemberSince> 
+			22/04/1998 
+		</Client.MemberSince>
+		<Client.NoOfPreviousClaims>
+			0
+		</Client.NoOfPreviousClaims>
+	</Client>
+
+	<Client ClientID = "35647822">
+		<Client.Name> 
+			"Jamie King" 
+		</Client.Name>
+		<Client.Gender> 
+			"Male" 
+		</Client.Gender>
+		<Client.Address> 
+			"Kings Cross"
+		</Client.Address>
+		<Client.Age> 
+			25 
+		</Client.Age>
+		<Client.MemberSince> 
+			12/05/2000 
+		</Client.MemberSince>
+		<Client.NoOfPreviousClaims>
+			0
+		</Client.NoOfPreviousClaims>
+	</Client>
+</Clients>
+
+
+
+

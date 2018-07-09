@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE Employee [
+	<!ELEMENT Employee (Age, Employee_Num, Name, Years_Of_Service, Telephone_No, reportsTo)>	<!-- Document describing the Employee class -->
+	<!ELEMENT Age (#PCDATA)>						<!-- states the age of the Employee -->
+	<!ELEMENT Employee_Num (#PCDATA)>				<!-- states the Employee Number -->
+	<!ELEMENT Name (#PCDATA)>						<!-- states the name of the Employee -->
+	<!ELEMENT Years_Of_Service (#PCDATA)>			<!-- states how many years the Employee has been working with the company -->
+	<!ELEMENT Telephone_No (#PCDATA)>				<!-- states the phone number of the Employee -->
+	<!ELEMENT reportsTo (Manager)>					<!-- states the Manager that the Employee must report to -->
+	<!ELEMENT Manager (#PCDATA)>					<!-- Refers to the Manager of the Employee  -->
+
+
+	<!ATTLIST Employee xmi.id CDATA #REQUIRED>		<!-- is required to illustrate association between Manager and Employee -->
+	<!ATTLIST Employee gender CDATA #IMPLIED>		<!-- is an optional attribute to show the gender of the Employee -->
+	<!ATTLIST Age dateOfBirth CDATA #IMPLIED>		<!-- is an optional attribute to show the date of birth of the Employee -->
+	<!ATTLIST Name placeOfBirth CDATA #IMPLIED>		<!-- is an optional attribute to show the place of birth of the Employee -->
+	<!ATTLIST Manager xmi.idref CDATA #REQUIRED>	<!-- is required to illustrate association between Manager and Employee -->
+]>
+
+<Employee xmi.id="e1" gender="Male">
+  <Age dateOfBirth="04/12/1977">
+  	25
+  </Age>
+  <Employee_Num>
+  	9874
+  </Employee_Num>
+  <Name placeOfBirth ="Ireland">
+  	Tom Smith
+  </Name>
+  <Years_Of_Service>
+  	5
+  </Years_Of_Service>
+  <Telephone_No>
+  	0875482987
+  </Telephone_No>
+  <reportsTo>
+  	<Manager xmi.idref="m1"/>
+  </reportsTo>
+</Employee>
